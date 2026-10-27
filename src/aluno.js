@@ -72,14 +72,8 @@ function atualizar(id, aluno, res) {
     });
 }
 
-<<<<<<< HEAD
 
 function excluir(id, res){
-=======
-// deletando um aluno
-function excluir(id, res){
-    const sql = "DELETE FROM alunos WHERE id = ?";
->>>>>>> 47f53bcf73c0e02ccdc37e363ee4375fa050d9af
 
     conexao.query(sql, id, (erro, resultados) => {
         if(erro){
@@ -87,16 +81,8 @@ function excluir(id, res){
         } else {
             res.status(200).json({"status" : "estudante excluído com sucesso", id});
         }
-<<<<<<< HEAD
     })
-=======
-    }) 
->>>>>>> 47f53bcf73c0e02ccdc37e363ee4375fa050d9af
 }
 
 export { ler, inserir, lerUm, atualizar, excluir };
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 47f53bcf73c0e02ccdc37e363ee4375fa050d9af
