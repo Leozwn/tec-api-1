@@ -3,7 +3,10 @@ import express from 'express';
 import cors from 'cors';
 import { ler, inserir, lerUm, atualizar, excluir } from './src/aluno.js';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47f53bcf73c0e02ccdc37e363ee4375fa050d9af
 const app = express();
 const porta = process.env.PORT || 3000;
 
@@ -63,8 +66,14 @@ app.patch('/alunos/:id', (req, res) => {
 
 // DELETE: endpoint para excluir alunos
 app.delete('/alunos/:id', (req, res) => {
+<<<<<<< HEAD
     const id = parseInt(req.params.id);
     excluir(id, res); 
+=======
+    // res.send(`Aluno excluído com sucesso!`);
+    const id = parseInt(req.params.id);
+    excluir(id, res);
+>>>>>>> 47f53bcf73c0e02ccdc37e363ee4375fa050d9af
 });
 
 
